@@ -51,11 +51,11 @@ select
     	MAX(CASE WHEN tahun = 2021 THEN total_transaksi END) AS total_2021,
     	MAX(CASE WHEN tahun = 2022 THEN total_transaksi END) AS total_2022,
 CASE
-		WHEN MAX(CASE WHEN tahun = 2022 THEN total_transaksi END) > 
+    WHEN MAX(CASE WHEN tahun = 2022 THEN total_transaksi END) > 
     	MAX(CASE WHEN tahun = 2021 THEN total_transaksi END) THEN 'Peningkatan'
-    	WHEN MAX(CASE WHEN tahun = 2022 THEN total_transaksi END) < 
+    WHEN MAX(CASE WHEN tahun = 2022 THEN total_transaksi END) < 
     	MAX(CASE WHEN tahun = 2021 THEN total_transaksi END) THEN 'Penurunan'
-    		ELSE 'Tidak Berubah' END AS status_perubahan
+    ELSE 'Tidak Berubah' END AS status_perubahan
 FROM (
     SELECT
         sd.category,
