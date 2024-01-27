@@ -2,9 +2,9 @@
  							/E-COMMERCE SALES ANALYSIS/
 							///////////////////////////
 */
-------------------------------------------------------------
---1. Menampilkan bulan total nilai transaksi paling besar --
-------------------------------------------------------------
+-----------------------------------------------------------------
+--1. Memfilter bulan dengan total nilai transaksi paling besar --
+-----------------------------------------------------------------
 
 select
 	EXTRACT(MONTH FROM order_date) AS bulan,
@@ -20,9 +20,9 @@ ORDER BY
 	total_transaksi_terbesar desc
 limit 1
 
-----------------------------------------------------------------
---2. Menampilkan kategori dengan nilai transaksi paling besar --
-----------------------------------------------------------------
+--------------------------------------------------------------
+--2. Memfilter kategori dengan nilai transaksi paling besar --
+--------------------------------------------------------------
 
 select
 	sku_detail.category,
@@ -73,9 +73,9 @@ FROM (
 	GROUP BY
     	category;
    
---------------------------------------------------------------------------------------
--- 4. Menampilkan top 5 metode pembayaran yang paling populer digunakan selama 2022 --
---------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+-- 4. Memfilter top 5 metode pembayaran yang paling populer digunakan selama 2022 --
+------------------------------------------------------------------------------------
 
 select
     payment_method,
@@ -97,9 +97,9 @@ ORDER BY
     total_payment DESC
 LIMIT 5;
 
-----------------------------------------------------------
---5. Menampilan top 5 produk dengan transaksi terbanyak --
-----------------------------------------------------------
+---------------------------------------------------------
+--5. Memfilter top 5 produk dengan transaksi terbanyak --
+---------------------------------------------------------
 
 select
     product_category,
