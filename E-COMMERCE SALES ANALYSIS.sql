@@ -97,9 +97,9 @@ ORDER BY
     total_payment DESC
 LIMIT 5;
 
------------------------------------------------
---5. Top 5 produk dengan transaksi terbanyak --
------------------------------------------------
+----------------------------------------------------------
+--5. Menampilan top 5 produk dengan transaksi terbanyak --
+----------------------------------------------------------
 
 select
     product_category,
