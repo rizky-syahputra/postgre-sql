@@ -42,8 +42,8 @@ ORDER by
 limit 1
 
 ----------------------------------------------------------------------------------------------
-/* 3. Membandingkan nilai transaksi dari masing-masing kategori pada tahun 2021 dengan 2022 --
- * dan kategori apa saja yang mengalami peningkatan dan penurunan*/                         --
+-- 3. Membandingkan nilai transaksi dari masing-masing kategori pada tahun 2021 dengan 2022 --
+-- dan kategori apa saja yang mengalami peningkatan dan penurunan                           --
 ----------------------------------------------------------------------------------------------
 
 select
