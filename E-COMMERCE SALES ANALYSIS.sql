@@ -71,7 +71,9 @@ FROM (
     GROUP BY
         sd.category, EXTRACT(YEAR FROM od.order_date)) AS TransaksiPerKategori
 	GROUP BY
-    	category;
+    	category
+    order by
+    	status_perubahan asc;
    
 ------------------------------------------------------------------------------------
 -- 4. Memfilter top 5 metode pembayaran yang paling populer digunakan selama 2022 --
